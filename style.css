@@ -1,0 +1,15 @@
+main{
+    height: 100vh;
+    background-color: #6495ed;
+    font-family: 'Cabin', sans-serif;
+}
+
+div#timer{
+    background-color: #e6e6fa;
+    color: #008080;
+    border-radius: 2rem;
+}
+
+p{
+    margin: 0 !important;
+}
