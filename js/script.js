@@ -1,5 +1,5 @@
 
-const Lesson = new Date("May 25, 2023 16:06").getTime();
+const Lesson = new Date("May 26 , 2023 9:30").getTime();
 let finishCounter = setInterval(CountDown , 1000);
 
 function CountDown(){
@@ -26,9 +26,11 @@ function CountDown(){
         
         }else{
             clearInterval(finishCounter);
-            const divTimer  = document.getElementById("timer");
+            const divBody = document.querySelector("div.body");
             const headerTimer = document.querySelector("div.header-timer");
-            headerTimer.innerHTML = "The lesson has begun";
+            headerTimer.innerHTML = "The lesson has begun!!";
+            headerTimer.classList.add("fs-1" , "fw-bold");
+            divBody.classList.add("d-none");
         }
 
        
