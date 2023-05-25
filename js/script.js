@@ -6,5 +6,11 @@ console.log(Lesson);
 function CountDown(){
     let DateNow = new Date().getTime();
     let distanceOflesson = Lesson - DateNow;
-    console.log(distanceOflesson);
+
+    //Time calculations for days, hours, minutes and seconds
+    let days = Math.floor(distanceOflesson / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((distanceOflesson % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((distanceOflesson % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((distanceOflesson % (1000 * 60)) / 1000);
+
 }
